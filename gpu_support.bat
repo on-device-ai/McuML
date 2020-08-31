@@ -5,8 +5,8 @@
 
 @REM *** McuML Project ***
 @REM Copyright (C) 2020 On-Device AI Co., Ltd.
-@CALL conda env remove --name McuML
-@CALL conda env remove --name mbed
-@rd /S /Q .\miniconda3\envs
-@mkdir .\miniconda3\envs
-@rd /S /Q .\tensorflow\tensorflow\lite\micro\tools\make\gen
+@CALL conda activate McuML
+@IF %ERRORLEVEL% NEQ 0 goto End
+@CALL conda remove tensorflow --yes
+@CALL conda install tensorflow-gpu --yes
+:End

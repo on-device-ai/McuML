@@ -10,5 +10,6 @@
 @CALL conda env remove --name McuML
 @CALL conda env create --file McuML.yml --name McuML
 @CALL conda activate McuML
+@CALL conda install tensorflow --yes
 :StartJupyterLab
 @CALL jupyter lab
