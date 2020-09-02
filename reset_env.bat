@@ -10,3 +10,7 @@
 @rd /S /Q .\miniconda3\envs
 @mkdir .\miniconda3\envs
 @rd /S /Q .\tensorflow\tensorflow\lite\micro\tools\make\gen
+@rd /S /Q %userprofile%\.conda
+@rd /S /Q %userprofile%\.ipython
+@rd /S /Q %userprofile%\.jupyter
+@rd /S /Q %userprofile%\.mbed
