@@ -7,7 +7,7 @@ The McuML is a project for the development and build of "TensorFlow Lite for Mic
   
 How to run:  
 
-* Click or execute "McuML.bat". If the environment has not been installed, it will be install and setup automatically. Also, you will be required to select the TensorFlow 2.0 version (CPU or GPU) during the installation process. Please choose according to your computer configuration.
+* Click or execute "McuML.bat". If the environment has not been installed, it will be install and setup automatically. Also, you will be required to select the TensorFlow 2.0 version (CPU or GPU) during the installation process.Please choose according to your computer configuration.
 * If you want to change McuML to another directory, please execute first "McuML.bat uninstall" to remove the environment.
 
 ![201126](https://user-images.githubusercontent.com/44540872/100257680-28feb580-2f81-11eb-8044-dc81a5620948.png)
