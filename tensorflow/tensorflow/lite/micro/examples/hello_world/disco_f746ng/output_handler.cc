@@ -65,6 +65,12 @@ void HandleOutput(tflite::ErrorReporter* error_reporter, float x_value,
   // which causes artifacts and crashes
   int x_pos = dot_radius + static_cast<int>(x_value * x_increment);
 
+  if (y_value > 1) {
+    y_value = 1;	  
+  } else if (y_value < -1) {
+	y_value = -1;
+  }
+
   // Calculate y position, ensuring the dot is not partially offscreen
   int y_pos;
   if (y_value >= 0) {
