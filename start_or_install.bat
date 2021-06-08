@@ -24,11 +24,13 @@
   @IF %OPT%==2 GOTO TF_GPU
   :TF_CPU
     @ECHO Install TensorFlow 2.0 CPU
-    @CALL conda install tensorflow=2.0 --yes
+    @pip install tensorflow==2.0.0
     @GOTO StartJupyterLab
   :TF_GPU
     @ECHO Install TensorFlow 2.0 GPU
-    @CALL conda install tensorflow-gpu=2.0 --yes
+	@CALL conda install cudatoolkit=10.0 --yes
+	@CALL conda install cudnn=7.6.5 --yes
+	@pip install tensorflow-gpu==2.0.0
     @GOTO StartJupyterLab
 :StartJupyterLab
   @SET MCUML_HOME_PATH=%CD%
