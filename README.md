@@ -2,7 +2,7 @@
 The McuML is a project for the development and build of "TensorFlow Lite for Microcontrollers" applications on Windows OS. The version on the main branch corresponds to the architecture migration of "TensorFlow Lite for Microcontrollers" from tensorflow to tflite-micro, and the building environment is changed from MSYS2 to WSL 1 (such as the [OpenM1 master](https://github.com/on-device-ai/OpenM1) branch method).  
   
 ### How to run  
-* Please install WSL 1 and Ubuntu 18.04 first. Then click or execute "[McuML.bat](https://github.com/on-device-ai/McuML/blob/main/McuML.bat)". If the environment has not been installed, it will be install and setup automatically. Also, you will be required to select the TensorFlow 2.0 version (CPU or GPU) during the installation process.  
+* Please install WSL 1 and Ubuntu 18.04 first. Then click or execute "[McuML.bat](https://github.com/on-device-ai/McuML/blob/main/McuML.bat)". If the environment has not been installed, it will be install and setup automatically. Also, you will be required to select the TensorFlow 2.4 version (CPU or GPU) during the installation process.  
 * If you want to change McuML to another directory, please execute first "McuML.bat uninstall" to remove the environment.  
   
 ### WSL 1 installation instructions
