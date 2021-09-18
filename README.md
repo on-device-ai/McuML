@@ -1,5 +1,5 @@
 # McuML  
-McuML is a project used to develop and build "TensorFlow Lite for Microcontrollers" applications on the Windows operating system. The version on the main branch corresponds to the migration of "TensorFlow Lite for Microcontrollers" from tensorflow to the tflite-micro new architecture version, and the construction environment is changed from MSYS2 to WSL 1 (such as the [OpenM1 master](https://github.com/on-device-ai/OpenM1) branch).  
+The McuML is a project for the development and build of "TensorFlow Lite for Microcontrollers" applications on Windows OS. The version on the main branch corresponds to the architecture migration of "TensorFlow Lite for Microcontrollers" from tensorflow to tflite-micro, and the building environment is changed from MSYS2 to WSL 1 (such as the [OpenM1 master](https://github.com/on-device-ai/OpenM1) branch method).  
   
 ### How to run  
 * Please install WSL 1 and Ubuntu 18.04 first. Then click or execute "[McuML.bat](https://github.com/on-device-ai/McuML/blob/main/McuML.bat)". If the environment has not been installed, it will be install and setup automatically. Also, you will be required to select the TensorFlow 2.0 version (CPU or GPU) during the installation process.  
@@ -23,7 +23,7 @@ After executing McuML, the status of the current WSL version will be prompted:
   
 ###Known issues  
 
-1. If you encounter problems when training the hello_world example on Windows, please refer to this [issue](https://github.com/tensorflow/tensorflow/issues/44882)'s solution. The required files are placed in [third_party_tools/tensorflow_issues_44882/](https://github.com/on-device-ai/McuML/tree/main/third_party_tools/tensorflow_issues_44882).  
+1. If you encounter problems when training the hello_world example on Windows, please refer to this [issue](https://github.com/tensorflow/tensorflow/issues/44882)'s solution. The required files are placed in [third\_party\_tools/tensorflow\_issues\_44882/](https://github.com/on-device-ai/McuML/tree/main/third_party_tools/tensorflow_issues_44882).  
 2. Currently, it only supports the SparkFun Edge build, and it will correspond to other development boards in the future.  
   
 ![210918_2](https://user-images.githubusercontent.com/44540872/133890889-99731668-c543-4657-8a88-4f316515c9ae.png)
