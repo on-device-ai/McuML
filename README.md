@@ -21,7 +21,7 @@ Why use WSL 1, please refer to this [article](https://docs.microsoft.com/windows
 After executing McuML, the status of the current WSL version will be prompted:  
 ![210918_1](https://user-images.githubusercontent.com/44540872/133890784-dc491ed0-309c-472b-833b-f9e7f54248c9.png)  
   
-###Known issues  
+### Known issues  
 
 1. If you encounter problems when training the hello_world example on Windows, please refer to this [issue](https://github.com/tensorflow/tensorflow/issues/44882)'s solution. The required files are placed in [third\_party\_tools/tensorflow\_issues\_44882/](https://github.com/on-device-ai/McuML/tree/main/third_party_tools/tensorflow_issues_44882).  
 2. Currently, it only supports the SparkFun Edge build, and it will correspond to other development boards in the future.  
