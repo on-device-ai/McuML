@@ -7,11 +7,11 @@ The McuML is a project for the development and build of "TensorFlow Lite for Mic
   
 ### WSL 1 installation instructions
 Why use WSL 1, please refer to this [article](https://docs.microsoft.com/windows/wsl/compare-versions).  
+For further installation information, please refer to Microsoft's official [instructions](https://docs.microsoft.com/windows/wsl/install-win10#manual-installation-steps).  
   
 1. Execute at the Windows command prompt:  
    `powershell "start-process -FilePath \"powershell\" -verb runas -ArgumentList \"dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all\""`
-2. From the following link, install Ubuntu 18.04:  
-   [https://www.microsoft.com/p/ubuntu-1804-lts/9n9tngvndl3q?rtc=1&activetab=pivot:overviewtab](https://www.microsoft.com/p/ubuntu-1804-lts/9n9tngvndl3q?rtc=1&activetab=pivot:overviewtab)  
+2. Install [Ubuntu 18.04](https://www.microsoft.com/p/ubuntu-1804-lts/9n9tngvndl3q?rtc=1&activetab=pivot:overviewtab)  
 3. Install the necessary packages under Ubuntu 18.04:  
    `sudo apt-get update`  
    `sudo apt-get install build-essential`  
