@@ -1,15 +1,34 @@
 # McuML  
-The McuML is a project for the development and build of "TensorFlow Lite for Microcontrollers" applications on Windows OS. The refactored version is on the "master" branch, and the original version is on the "[original](https://github.com/on-device-ai/McuML/tree/original)" branch. Project refactoring is mainly to make the following changes:  
+McuML is a project used to develop and build "TensorFlow Lite for Microcontrollers" applications on the Windows operating system. The version on the main branch corresponds to the migration of "TensorFlow Lite for Microcontrollers" from tensorflow to the tflite-micro new architecture version, and the construction environment is changed from MSYS2 to WSL 1 (such as the [OpenM1 master](https://github.com/on-device-ai/OpenM1) branch).  
   
-1. Integrate all external executable files under the third\_party\_tools directory.  
-2. Try to streamline the TensorFlow source code so that it only use for "TensorFlow Lite for Microcontrollers" applications.  
-3. The way Python executes "shell" commands has changed. Information will be output in realtime during command execution. 
+### How to run  
+* Please install WSL 1 and Ubuntu 18.04 first. Then click or execute "[McuML.bat](https://github.com/on-device-ai/McuML/blob/main/McuML.bat)". If the environment has not been installed, it will be install and setup automatically. Also, you will be required to select the TensorFlow 2.0 version (CPU or GPU) during the installation process.  
+* If you want to change McuML to another directory, please execute first "McuML.bat uninstall" to remove the environment.  
   
-How to run:  
+### WSL 1 installation instructions
+Why use WSL 1, please refer to this [article](https://docs.microsoft.com/windows/wsl/compare-versions).  
+  
+1. Execute at the Windows command prompt:  
+   `powershell "start-process -FilePath \"powershell\" -verb runas -ArgumentList \"dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all\""`
+2. From the following link, install Ubuntu 18.04:  
+   [https://www.microsoft.com/p/ubuntu-1804-lts/9n9tngvndl3q?rtc=1&activetab=pivot:overviewtab](https://www.microsoft.com/p/ubuntu-1804-lts/9n9tngvndl3q?rtc=1&activetab=pivot:overviewtab)  
+3. Install the necessary packages under Ubuntu 18.04:  
+   `sudo apt-get update`  
+   `sudo apt-get install build-essential`  
+   `sudo apt-get install python python-pip python3 python3-pip`  
+   `sudo apt-get install git unzip`
+    
+After executing McuML, the status of the current WSL version will be prompted:  
+![210918_1](https://user-images.githubusercontent.com/44540872/133890784-dc491ed0-309c-472b-833b-f9e7f54248c9.png)  
+  
+###Known issues  
 
-* Click or execute "McuML.bat". If the environment has not been installed, it will be install and setup automatically. Also, you will be required to select the TensorFlow 2.0 version (CPU or GPU) during the installation process.Please choose according to your computer configuration.
-* If you want to change McuML to another directory, please execute first "McuML.bat uninstall" to remove the environment.
+1. If you encounter problems when training the hello_world example on Windows, please refer to this [issue](https://github.com/tensorflow/tensorflow/issues/44882)'s solution. The required files are placed in [third_party_tools/tensorflow_issues_44882/](https://github.com/on-device-ai/McuML/tree/main/third_party_tools/tensorflow_issues_44882).  
+2. Currently, it only supports the SparkFun Edge build, and it will correspond to other development boards in the future.  
+  
+![210918_2](https://user-images.githubusercontent.com/44540872/133890889-99731668-c543-4657-8a88-4f316515c9ae.png)
 
-![201126](https://user-images.githubusercontent.com/44540872/100257680-28feb580-2f81-11eb-8044-dc81a5620948.png)
- 
+
+
+
   
