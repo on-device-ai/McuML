@@ -23,7 +23,7 @@ When executing McuML, it will prompt the current state of WSL:
   
 ### Known issues  
 
-1. If you encounter problems when training the hello_world example on Windows, please refer to this [issue](https://github.com/tensorflow/tensorflow/issues/44882)'s solution. The required files are placed in [third\_party\_tools/tensorflow\_issues\_44882/](https://github.com/on-device-ai/McuML/tree/main/third_party_tools/tensorflow_issues_44882).  
+1. If you encounter problems when training the hello_world example on Windows, please refer to this [issue](https://github.com/tensorflow/tensorflow/issues/44882)'s solution. The required files are placed in [third\_party\_tools/tensorflow\_issues\_44882](https://github.com/on-device-ai/McuML/tree/main/third_party_tools/tensorflow_issues_44882).  
 2. Currently, it only supports deploying to SparkFun Edge, and it will correspond to other development boards in the future.  
   
 ![210918_2](https://user-images.githubusercontent.com/44540872/133890889-99731668-c543-4657-8a88-4f316515c9ae.png)  
